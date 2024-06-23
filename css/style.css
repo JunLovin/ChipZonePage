@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,34,9,1) 37%, rgba(0,212,255,1) 100%); */
+    background: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s;
+}
+
+.container {
+    --pading-horizontal: 3rem;
+    --pading-vertical: 3rem;
+    --spacing: 0.75rem;
+    --width: 65rem;
+    border-radius: 10px;
+    max-width: 100%;
+    position: relative;
+    width: (--width);
+    z-index: 1;
+    padding: var(--pading-vertical) var(--pading-horizontal);
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.container p {
+    font-size: 1.625em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.container .dark-change {
+    width: 225px;
+    height: 70px;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3.5em;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: .1s;
+}
+
+.container a i {
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.container a span {
+    font-size: 40px;
+}
+
+.container a:hover {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* DARKMODE */
+
+.dark-change {
+    cursor: pointer;
+}
+
+body.night {
+    background: #000;
+}
+
+body.night .container {
+    color: #fff;
+}
+
+body.night .container a {
+    color: white;
+}
